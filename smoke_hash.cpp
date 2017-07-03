@@ -40,7 +40,7 @@ int main()
     
     int index_i = dng(pt_sum, 0, 9); //determining index 1
 
-    for (int i=0; i < pt.length()*pt_sum; i++) //making hash 10x the size of the plaintext
+    for (int i=0; i < pt.length()*pt_sum; i++) //making hash as big as the length of the plaintext multiplied by the sum of the characters
     {
         
         std::cout << random_data[index_i][dng(pt[i % pt.length()],0,9)]; // see some problems with this? how to improve? I can think of a few!
