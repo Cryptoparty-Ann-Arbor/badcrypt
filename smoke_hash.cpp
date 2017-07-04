@@ -1,5 +1,6 @@
 // single word hashing example using deterministic number generator mersenne twister
 // all random is pseduo random...relax
+// think of some ways to improve certain aspects if you have c++ skills! I'll try to make an even more basic example.
 
 #include <iostream>
 #include <vector>
