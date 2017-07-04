@@ -44,7 +44,7 @@ int main()
     {
         
         std::cout << random_data[index_i][dng(pt[i % pt.length()],0,9)]; // see some problems with this? how to improve? I can think of a few!
-        index_i = ((index_i + 1) % 9); // to avoid repetition
+        index_i = ((index_i + 1) % 10); // to avoid repetition
     }
 
 }
