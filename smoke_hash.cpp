@@ -1,5 +1,6 @@
 // single word hashing example using deterministic number generator mersenne twister
 // all random is pseduo random...relax
+// think of some ways to improve certain aspects if you have c++ skills! I'll try to make an even more basic example.
 
 #include <iostream>
 #include <vector>
@@ -40,11 +41,11 @@ int main()
     
     int index_i = dng(pt_sum, 0, 9); //determining index 1
 
-    for (int i=0; i < pt.length()*pt_sum; i++) //making hash 10x the size of the plaintext
+    for (int i=0; i < pt.length()*pt_sum; i++) //making hash as big as the length of the plaintext multiplied by the sum of the characters
     {
         
         std::cout << random_data[index_i][dng(pt[i % pt.length()],0,9)]; // see some problems with this? how to improve? I can think of a few!
-        index_i = ((index_i + 1) % 9); // to avoid repetition
+        index_i = ((index_i + 1) % 10); // to avoid repetition
     }
 
 }
