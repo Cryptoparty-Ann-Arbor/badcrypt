@@ -15,14 +15,14 @@ If your message had equivalent length to another common phrase, say HELLO THERE 
 caesarshuffle_DEC.cpp:
 reverses the idea by finding the first letter using the password and then finding the appropriate alphabets using the plaintext as it goes.
 
-cryptoanalysis_challenge:
+cryptanalysis_challenge:
 I'm going to try to crack my own corn (jimmy), but if you want to give it a shot I'd be thoroughly impressed that you cared enough to do it! caesar ciphers are not very resistant to brute force, but I think this one is a little bit more resistant because unless you know for certain that you have the correct first letter, the 2nd letter does not become clear, so if you fix letter 1 and say OK I think it is B for sure - you have to know the initial alphabet state (which is determined by a password). So if you've fixed the first letter to "B" you then have 25! alphabet permutations to try out in order to find the 2nd letter, and you could only go by context...
 
-So the brute force method would be finding the first letter through guessing, trying out every alphabet permutation that puts the encrypted letter in the slot of that letter, for example if "F" was encrypted to "B" then you'd look at {1,F,3,4,5,6,...} (where the digits are permutated letters) - after generating the list of permutations you'd go down the decryption path using the fixed letter as the seed and seeing what you end up with at the end. It's only 15 septillion combinations after you fix that first letter! GL! If this is unclear, use cryptoanalysis!
+So the brute force method would be finding the first letter through guessing, trying out every alphabet permutation that puts the encrypted letter in the slot of that letter, for example if "F" was encrypted to "B" then you'd look at {1,F,3,4,5,6,...} (where the digits are permuted letters) - after generating the list of permutations you'd go down the decryption path using the fixed letter as the seed and seeing what you end up with at the end. It's only 15 septillion combinations after you fix that first letter! GL! If this is unclear, use cryptanalysis!
 
 
 the point of the repo:
 it gets you thinking about what hashes are, just another way to represent a message that is not necessarily reversible
-what gets tough is resistance to cryptoanalysis!
+what gets tough is resistance to cryptanalysis!
 
 more to come later!
