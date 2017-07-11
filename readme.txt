@@ -2,6 +2,10 @@ readme
 
 this repo has some DIY encryption that I am cooking up all by my lonesome (unless you join in!) it's all educational and all pretty non-functional. Enjoy some C++!
 
+admin_password_challenges
+
+A series of programming puzzles centered around the idea of faulty hashing or encryption implementations for you to exploit and break! Thwart Craig!
+
 smoke_hash.cpp:
 this is a simple example, you could have a hashing scheme where you said a=1, b=2, etc
 it would just be terribly obvious to a basic newspaper reader
