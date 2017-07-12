@@ -1,6 +1,5 @@
 I changed my mind, instead of releasing the answers weekly, they will be released as they
-are finished, and if you want to see how it's done before trying yourself - well then spoil it 
-for yourself you little jerk, who cares.
+are finished, and if you want to see how it's done before trying yourself…well..you can do that.
 
 The two solutions that I came up with are:
 
@@ -8,7 +7,7 @@ Less interesting:
 1) Brute Force: using a password list and hashing all of the passwords on the list looking
 for a match. This works because Craig chooses a rather weak password. The source is 
 brute_force.cpp. I won't explain this more than to say you plug in a password list into 
-the program directory titled "hashlist" and the program will check if you find a hit.
+the program directory titled "hashlist" and the program will check if you find a hit. No password list included.
 
 More interesting:
 2) Analysis: By determining how the hashing algorithm works, a password with an
