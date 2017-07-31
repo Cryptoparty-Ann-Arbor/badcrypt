@@ -1,0 +1,21 @@
+List of possible hash permutations
+
+Iterations: You can iterate an algorithm multiple times, by give a multiplier with 'x##' appended. For example SHA1x5 will do the SHA1 algorithm 5 times. The maximum of iterations is 100'000.
+
+Reverse: You can reverse the hash with using REV. This means the hash will be completely reversed. For example 098f6bcd4621d373cade4e832627b4f6 will become 6f4b726238e4edac373d1264dcb6f890.
+
+Rotate: You can shift a hash with a given number of shifts. One shift will put the char on the right side and will prepend it to the string. For example 098f6bcd4621d373cade4e832627b4f6 with ROT2 will become f6098f6bcd4621d373cade4e832627b4.
+
+Cut: You can cut off some parts of a hash. The first given number sets the start point of the cut and the second number how many characters are taken. For example 098f6bcd4621d373cade4e832627b4f6 with CUT0-16 becomes 098f6bcd4621d373.
+
+Uppercase: UC makes the whole string to uppercase. For example 098f6bcd4621d373cade4e832627b4f6 becomes 098F6BCD4621D373CADE4E832627B4F6.
+
+Multiplain: You can use the PLAIN of the hash multiple times in the hash algorithm. For every algorithm or modification you can use brackets to set the range where this modification is done. If you don't use brackets for every modification it does it on all the remaining string to the right. If you don't enter any plain in the hash string, it will be added at the end, so all algorithms and modifications are done on it.
+
+If you enter MD5(PLAIN)SHA1(PLAIN) you will get a hash which is the MD5 hash of the plain with the SHA1 of the plain appended, this means you will get a hash with length 72. You can use as many brackets you want, like with MD5(MD5(PLAIN)SHA1(PLAIN)) which will result in an MD5 of the given explained hash before. MD5MD5(PLAIN)SHA1(PLAIN) will get the same result, it's just a bit more difficult to see quickly which algorithmm is done on which part.
+
+
+Any logical operand that you can think of that doesn't result in ambiguity between strings ie the transform zero(STRING) = 000000 a transformation that just zeroes out all string character entries doesn't work very well for creating unique strings.
+
+However one could have a 1/2 UC transformation like this 1/2_UC(string) = STRing - especially if the string is in lowercase naturally
+such as SHA256. -- does removing of certain values result in preservation of uniq
